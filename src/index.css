@@ -1,0 +1,19 @@
+@import "tailwindcss";
+.name {
+    position: relative;
+    z-index: 2;
+}
+
+.name::before {
+    content: '';
+    width: 100%;
+    height: 40%;
+    position: absolute;
+    bottom: 0;
+    background-color: #10826b;
+    z-index: -1;
+}
+
+.about-heading {
+    font-family: Georgia, serif;
+}

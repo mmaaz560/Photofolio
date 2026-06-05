@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useGlobal } from "../context/AppContext";
 import { FaCamera, FaBars, FaTimes } from "react-icons/fa";
-import { Navbardata, socialIcons } from "../data/Navbardata";
+import { Navbardata, socialIcons } from "../data/navbardata";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {

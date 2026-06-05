@@ -2,8 +2,7 @@ import React from 'react'
 import { useGlobal } from '../context/AppContext'
 import { datas } from '../data/datas'
 import Innerdata from '../component/Innerdata'
-import { socialIcons } from '../data/Navbardata'
-
+import { Navbardata, socialIcons } from "../data/navbardata";
 const Services = () => {
     const {colors} =useGlobal()
   return (

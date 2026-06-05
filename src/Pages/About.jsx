@@ -1,8 +1,7 @@
 import React from 'react'
 import { useGlobal } from '../context/AppContext'
 import { SlArrowRight } from 'react-icons/sl'
-import { socialIcons } from '../data/Navbardata'
-
+import { Navbardata, socialIcons } from "../data/navbardata";
 const About = () => {
     const {colors} = useGlobal()
   return (

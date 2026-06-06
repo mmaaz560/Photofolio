@@ -12,8 +12,8 @@ const Navbar = () => {
       <nav className="w-full  px-6 py-4 flex items-center justify-between relative">
         {/* Logo */}
         <div className="flex items-center  gap-2">
-          <FaCamera className="sm:text-[26px] md:text-3xl text-green-500" />
-          <h1 className="sm:text-2xl md:text-3xl font-bold">
+          <FaCamera className="sm:text-[28px] md:text-3xl text-green-500" />
+          <h1 className="sm:text-[28px] md:text-3xl font-bold">
             Photofolio
           </h1>
         </div>
@@ -79,16 +79,18 @@ const Navbar = () => {
           </div>
 
           {/* Mobile Nav Links */}
-         <ul className="flex flex-col items-center gap-4 mt-10 text-2xl font-semibold">
-  {Navbardata.map((item, index) => {
-    return (
-      <li
-        key={index}
-        className="cursor-pointer hover:text-green-500 duration-300"
-        onClick={() => setShowMenu(false)}
+         <ul className="flex flex-col items-center gap-4 mt-10 text-xl font-semibold">
+          {Navbardata.map((item, index) => {
+         return (
+       <li
+         key={index}>
+         <Link
+        to={item.link}
+        className="cursor-pointer  hover:text-green-500 duration-300"
       >
         {item.title}
-      </li>
+      </Link>
+              </li>
     );
   })}
 </ul>

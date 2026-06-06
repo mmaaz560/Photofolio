@@ -34,7 +34,7 @@ const About = () => {
         <div className="space-y-2 ">
             <h1 className="text-2xl font-semibold about-heading">UI/UX DesiProfessional Photographer from New Yorkgner & Web Developer.</h1>
             <p className='mt-5'><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</i></p>
-            <div className="flex mt-5 gap-4">
+            <div className=" md:flex mt-5 gap-4">
               <ul className="unstyled space-y-3">
                  <li className="flex items-center gap-1">
                    <SlArrowRight className="text-sm text-[#4EC9B0]" />

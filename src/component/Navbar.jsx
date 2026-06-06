@@ -80,20 +80,31 @@ const Navbar = () => {
           </div>
 
           {/* Mobile Nav Links */}
-          <ul className="flex flex-col items-center gap-4 mt-10 text-2xl font-semibold">
-            {Navbardata.map((item, index) => {
-              return (
-                <li
-                  key={index}
-                  className="cursor-pointer hover:text-green-500 duration-300"
-                  onClick={() => setShowMenu(false)}
-                >
-                  {item.title}
-                </li>
-              );
-            })}
-          </ul>
+         <ul className="flex flex-col items-center gap-4 mt-10 text-2xl font-semibold">
+  {Navbardata.map((item, index) => {
+    return (
+      <li
+        key={index}
+        className="cursor-pointer hover:text-green-500 duration-300"
+        onClick={() => setShowMenu(false)}
+      >
+        {item.title}
+      </li>
+    );
+  })}
+</ul>
 
+{/* Social Icons */}
+<ul className="flex justify-center gap-4 mt-8 text-2xl">
+  {socialIcons.map((item, index) => (
+    <li
+      key={index}
+      className="cursor-pointer hover:text-green-500 duration-300"
+    >
+      {item.icon}
+    </li>
+  ))}
+</ul>
         </div>
       </nav>
     </>

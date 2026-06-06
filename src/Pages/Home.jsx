@@ -13,7 +13,7 @@ const Home = () => {
       <section className="w-full min-h-screen flex items-center justify-center px-6">
         <div className="max-w-4xl text-center space-y-6">        
           {/* Heading */}
-          <h1 className="text-4xl md:text-6xl font-bold leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold leading-tight">
             I'm <span className="name">Jenny Wilson</span>
             <br />
             A Professional Photographer

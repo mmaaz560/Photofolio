@@ -11,15 +11,15 @@ const Navbar = () => {
     <>
       <nav className="w-full  px-6 py-4 flex items-center justify-between relative">
         {/* Logo */}
-        <div className="flex items-center gap-2">
-          <FaCamera className="text-3xl text-green-500" />
-          <h1 className="text-3xl font-bold">
+        <div className="flex items-center  gap-2">
+          <FaCamera className="sm:text-[26px] md:text-3xl text-green-500" />
+          <h1 className="sm:text-2xl md:text-3xl font-bold">
             Photofolio
           </h1>
         </div>
         {/* Desktop Navbar */}
         <ul
-          className={`hidden md:flex gap-6 text-lg font-semibold items-center ${colors.text}`}
+          className={`hidden md:flex gap-6 sm:md md:text-lg font-semibold items-center ${colors.text}`}
         >
           {Navbardata.map((item, index) => {
             return (
@@ -27,7 +27,7 @@ const Navbar = () => {
                 key={index}>
                  <Link
         to={item.link}
-        className="cursor-pointer hover:text-green-500 duration-300"
+        className="cursor-pointer  hover:text-green-500 duration-300"
       >
         {item.title}
       </Link>
@@ -39,9 +39,8 @@ const Navbar = () => {
         <div className="flex items-center gap-4">
 
           {/* Social Icons */}
-          <ul
-            className={`flex gap-4 text-2xl items-center ${colors.text}`}
-          >
+          <ul            
+            className={`hidden md:flex gap-4 text-2xl items-center ${colors.text}`}>
             {socialIcons.map((item, index) => {
               return (
                 <li
@@ -56,7 +55,7 @@ const Navbar = () => {
 
           {/* Mobile Menu Icon */}
           <div
-            className="md:hidden text-2xl cursor-pointer"
+            className="md:hidden text-xl sm:text-2xl cursor-pointer"
             onClick={() => setShowMenu(true)}
           >
             <FaBars />
